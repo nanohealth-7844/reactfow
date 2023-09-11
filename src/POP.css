@@ -1,0 +1,67 @@
+/* .container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1009;
+} */
+
+
+.mainContainer {
+    position: absolute;
+    /* top: -15px;
+    left: -5px; */
+    top: -11px;
+    left: -11sspx;
+    width: 350px;
+    height: 45vh;
+    z-index: 1010;
+    background-color: white;
+    /* border: 1px solid gray; */
+    box-sizing: border-box;
+    overflow: scroll;
+    background-color: rgb(224, 252, 65);
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 14px 3px gray;
+    /* overscroll-behavior: none !important; */
+    cursor: default;
+    /* border-radius: 5px !important; */
+}
+
+.closeBtn {
+    border: none;
+    background-color: red;
+    font-weight: bolder;
+    color: white;
+    width: auto;
+    position: relative;
+    top: 2px;
+    right: 0px !important;
+    box-sizing: border-box;
+}
+
+.closeBtn:hover {
+    color: red;
+    background-color: white;
+    border: 1px solid red;
+}
+
+/*hide the :default show of the reactflow branding  */
+
+.react-flow__attribution {
+    display: none;
+}
+
+
+
+/* to increase the zIndex of the arrow of the resizer */
+.react-flow__resize-control.handle.bottom.right {
+    left: 100%;
+    z-index: 1;
+}
